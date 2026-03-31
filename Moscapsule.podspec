@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Moscapsule"
-  s.version      = "0.7.0"
+  s.version      = "0.7.1"
   s.summary      = "MQTT Client for iOS written in Swift"
   s.description  = <<-DESC
                    MQTT Client for iOS written in Swift.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author       = { "tonary" => "nekomelife@gmail.com" }
 
   s.platform = :ios
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
 
   s.source       = { :git => "https://github.com/flightonary/Moscapsule.git", :tag => s.version }
 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.xcconfig     = {
-    'SWIFT_VERSION' => '4.0',
+    'SWIFT_VERSION' => '5.9',
     'OTHER_CFLAGS' => '-DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK'
   }
 
