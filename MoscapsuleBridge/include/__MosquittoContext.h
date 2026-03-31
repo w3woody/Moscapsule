@@ -11,8 +11,8 @@
 @property (nonatomic, copy) void (^onConnectCallback)(NSInteger);
 @property (nonatomic, copy) void (^onDisconnectCallback)(NSInteger);
 @property (nonatomic, copy) void (^onPublishCallback)(NSInteger);
-@property (nonatomic, copy) void (^onMessageCallback)(const struct mosquitto_message *);
-@property (nonatomic, copy) void (^onSubscribeCallback)(NSInteger, NSInteger, const int *);
+@property (nonatomic, copy) void (^onMessageCallback)(const struct mosquitto_message * _Nonnull);
+@property (nonatomic, copy) void (^onSubscribeCallback)(NSInteger, NSInteger, const int * _Nonnull);
 @property (nonatomic, copy) void (^onUnsubscribeCallback)(NSInteger);
 @end
 

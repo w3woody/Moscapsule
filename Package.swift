@@ -22,6 +22,7 @@ let package = Package(
                 .define("WITH_THREADING"),
                 .define("WITH_TLS"),
                 .define("WITH_TLS_PSK"),
+                .headerSearchPath("../../Moscapsule"),  // for config.h (dummy header)
             ]
         ),
         .target(
