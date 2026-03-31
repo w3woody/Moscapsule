@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Moscapsule"
-  s.version      = "0.7.0-beta1"
+  s.version      = "0.7.0"
   s.summary      = "MQTT Client for iOS written in Swift"
   s.description  = <<-DESC
                    MQTT Client for iOS written in Swift.
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '9.0'
 
-  s.source       = { :git => "https://github.com/tailoredmedia/Moscapsule.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/flightonary/Moscapsule.git", :tag => s.version }
 
   s.source_files = "Moscapsule/*.{h,m,swift}", "mosquitto/lib/*.{h,c}"
   s.public_header_files = "Moscapsule/Moscapsule.h", "Moscapsule/MosquittoCallbackBridge.h", "mosquitto/lib/mosquitto.h"
