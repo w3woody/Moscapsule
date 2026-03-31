@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/flightonary/Moscapsule.git", :tag => s.version }
 
-  s.source_files = "Moscapsule/*.{h,m,swift}", "mosquitto/lib/*.{h,c}"
-  s.public_header_files = "Moscapsule/Moscapsule.h", "Moscapsule/MosquittoCallbackBridge.h", "mosquitto/lib/mosquitto.h"
+  s.source_files = "Moscapsule/*.{h,swift}", "MoscapsuleBridge/**/*.{h,m}", "mosquitto/lib/*.{h,c}"
+  s.public_header_files = "Moscapsule/Moscapsule.h", "MoscapsuleBridge/include/MosquittoCallbackBridge.h", "MoscapsuleBridge/include/__MosquittoContext.h", "mosquitto/lib/mosquitto.h"
 
   s.requires_arc = true
   s.xcconfig     = {

@@ -60,6 +60,7 @@ The ObjC bridge captures the Swift closure via `__bridge` and invokes it from th
 ## Dependencies
 
 - **OpenSSL-Universal** `1.1.1200` (CocoaPods) — provides TLS support
+- **OpenSSL-Package** `≥ 3.3.2000` (SPM) — provides TLS support
 - **OpenSSL** git submodule (`submodules/OpenSSL/`) — for manual Xcode integration
 - **Mosquitto** — embedded C source in `mosquitto/lib/` (not a Pod dependency)
 

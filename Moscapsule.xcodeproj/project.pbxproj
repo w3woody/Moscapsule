@@ -102,7 +102,7 @@
 		09CF6B6F1A21F88000A97383 /* Moscapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moscapsule.swift; sourceTree = "<group>"; };
 		09FB79161BB6FA4100B22BAA /* cert.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = cert.bundle; sourceTree = "<group>"; };
 		C7360CC21A2435A8001F490F /* MosquittoCallbackBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosquittoCallbackBridge.m; sourceTree = "<group>"; };
-		C7360CC41A243949001F490F /* MosquittoCallbackBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MosquittoCallbackBridge.h; sourceTree = "<group>"; };
+		C7360CC41A243949001F490F /* MosquittoCallbackBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MosquittoCallbackBridge.h; path = include/MosquittoCallbackBridge.h; sourceTree = "<group>"; };
 		C7D24C911A3E94AC00C33384 /* download_mosquitto.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download_mosquitto.sh; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -130,6 +130,7 @@
 			children = (
 				09CF6B2F1A21F7C600A97383 /* mosquitto */,
 				09CF6B151A21F78700A97383 /* Moscapsule */,
+				ADD12C3F2F801687003A241F /* MoscapsuleBridge */,
 				09CF6B221A21F78700A97383 /* MoscapsuleTests */,
 				09CF6B141A21F78700A97383 /* Products */,
 			);
@@ -150,8 +151,6 @@
 				09CF6B6F1A21F88000A97383 /* Moscapsule.swift */,
 				09CF6B181A21F78700A97383 /* Moscapsule.h */,
 				09CF6B161A21F78700A97383 /* Supporting Files */,
-				C7360CC21A2435A8001F490F /* MosquittoCallbackBridge.m */,
-				C7360CC41A243949001F490F /* MosquittoCallbackBridge.h */,
 			);
 			path = Moscapsule;
 			sourceTree = "<group>";
@@ -229,6 +228,15 @@
 				09CF6B4E1A21F7E600A97383 /* will_mosq.h */,
 			);
 			name = lib;
+			sourceTree = "<group>";
+		};
+		ADD12C3F2F801687003A241F /* MoscapsuleBridge */ = {
+			isa = PBXGroup;
+			children = (
+				C7360CC21A2435A8001F490F /* MosquittoCallbackBridge.m */,
+				C7360CC41A243949001F490F /* MosquittoCallbackBridge.h */,
+			);
+			path = MoscapsuleBridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

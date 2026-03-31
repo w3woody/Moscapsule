@@ -79,3 +79,7 @@ Temporary Items
 # Claude Code
 *.local.json
 
+# Local build
+.build
+Package.resolved
+
