@@ -25,7 +25,6 @@ target 'MyApp' do
   platform :ios, '9.0'
 
   pod 'Moscapsule', :git => 'https://github.com/flightonary/Moscapsule.git'
-  pod 'OpenSSL-Universal'
 
   target 'MyAppTests' do
     inherit! :search_paths
@@ -41,6 +40,8 @@ and then run;
 ```
 $ pod install
 ```
+
+`OpenSSL-Universal` (1.1.1200) is pulled in automatically as a transitive dependency.
 
 Also you can specify old swift version in the podfile, such as the following;
 ```ruby
