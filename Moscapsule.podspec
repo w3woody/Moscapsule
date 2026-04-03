@@ -27,6 +27,6 @@ Pod::Spec.new do |s|
     'OTHER_CFLAGS' => '-DWITH_THREADING -DWITH_TLS -DWITH_TLS_PSK'
   }
 
-  s.dependency 'OpenSSL-Universal', '1.1.1200'
+  s.dependency 'OpenSSL-Universal', '~> 3.3'
 
 end

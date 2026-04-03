@@ -41,7 +41,7 @@ and then run;
 $ pod install
 ```
 
-`OpenSSL-Universal` (1.1.1200) is pulled in automatically as a transitive dependency.
+`OpenSSL-Universal` (~> 3.3, i.e. OpenSSL 3.x) is pulled in automatically as a transitive dependency.
 
 Also you can specify old swift version in the podfile, such as the following;
 ```ruby
